@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="resources\" />
+    <EmbeddedResource Include="resources/names.json" />
+    <EmbeddedResource Include="resources/TownNames.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ExtensionsStandard">
+      <HintPath>..\ExtensionsStandard\bin\Release\netstandard2.0\ExtensionsStandard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

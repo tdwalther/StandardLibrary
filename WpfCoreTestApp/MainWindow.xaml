@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfCoreTestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCoreTestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="36" Margin="12">
+            <Button Content="Predict" FontSize="20" Command="{Binding TestObserverCommand}" Margin="0,0,4,0" Width="120" />
+            <Button Content="Exit"  FontSize="20" Click="ButtonExit_Click" Margin="0,0,4,0" Width="120"/>
+        </StackPanel>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <Label Content="{Binding Greeting}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </StatusBar>
+
+        <TabControl Margin="12">
+            <TabItem Header="Test 1" >
+                <DataGrid Margin="12" ItemsSource="{Binding People}" />
+            </TabItem>
+        </TabControl>
+
+    </DockPanel>
+
+
+</Window>
