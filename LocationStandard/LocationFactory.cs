@@ -42,7 +42,8 @@ namespace LocationStandard
             LocationModel loc = new LocationModel()
             {
                 Lat = ((maxLat - minLat) * RandomNumbers.GetDouble() + minLat).TwoDec(),
-                Lon = ((maxLon - minLon) * RandomNumbers.GetDouble() + minLon).TwoDec()
+                Lon = ((maxLon - minLon) * RandomNumbers.GetDouble() + minLon).TwoDec(),
+                Town = RandomStrings.GetTownName()
             };
             loc.Region = Regions.First(r => r.IsInRegion(loc)).Name;
             return loc;
