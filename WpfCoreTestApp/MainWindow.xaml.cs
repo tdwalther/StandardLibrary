@@ -29,13 +29,11 @@ namespace WpfCoreTestApp
             MyObs obs = new MyObs();
             vm.Notifier = new Subject();
             vm.Notifier.Attach(obs);
-            
         }
 
         private void ButtonExit_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
-            
+            Application.Current.Shutdown();   
         }
     }
 

@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ExtensionsStandard\ExtensionsStandard.csproj" />
+    <ProjectReference Include="..\LocationStandard\LocationStandard.csproj" />
     <ProjectReference Include="..\MvvmStandard\MvvmStandard.csproj" />
     <ProjectReference Include="..\ObserverStandard\ObserverStandard.csproj" />
     <ProjectReference Include="..\RandomStandard\RandomStandard.csproj" />

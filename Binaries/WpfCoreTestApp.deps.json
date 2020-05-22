@@ -1,0 +1,102 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "WpfCoreTestApp/1.0.0": {
+        "dependencies": {
+          "ExtensionsStandard": "1.0.0",
+          "LocationStandard": "1.0.0",
+          "MvvmStandard": "1.0.0",
+          "ObserverStandard": "1.0.0",
+          "RandomStandard": "1.0.0"
+        },
+        "runtime": {
+          "WpfCoreTestApp.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "ExtensionsStandard/1.0.0": {
+        "runtime": {
+          "ExtensionsStandard.dll": {}
+        }
+      },
+      "LocationStandard/1.0.0": {
+        "dependencies": {
+          "ExtensionsStandard": "1.0.0",
+          "RandomStandard": "1.0.0"
+        },
+        "runtime": {
+          "LocationStandard.dll": {}
+        }
+      },
+      "MvvmStandard/1.0.0": {
+        "runtime": {
+          "MvvmStandard.dll": {}
+        }
+      },
+      "ObserverStandard/1.0.0": {
+        "runtime": {
+          "ObserverStandard.dll": {}
+        }
+      },
+      "RandomStandard/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "RandomStandard.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WpfCoreTestApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "ExtensionsStandard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LocationStandard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MvvmStandard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ObserverStandard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RandomStandard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

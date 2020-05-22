@@ -5,13 +5,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="resources\FemaleNames.txt" />
+    <None Remove="resources\MaleNames.txt" />
+    <None Remove="resources\Streets.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="resources\" />
     <EmbeddedResource Include="resources/names.json" />
     <EmbeddedResource Include="resources/TownNames.txt" />
+    <EmbeddedResource Include="resources\FemaleNames.txt" />
+    <EmbeddedResource Include="resources\MaleNames.txt" />
+    <EmbeddedResource Include="resources\Streets.txt" />
   </ItemGroup>
 
   <ItemGroup>

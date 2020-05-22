@@ -71,7 +71,7 @@ namespace RandomStandard
             return val;
         }
 
-        public static double NextNormal()
+        private static double NextNormal()
         {
             // based on algorithm from Numerical Recipes
             if (m_StoredUniformDeviateIsGood)

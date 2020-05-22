@@ -10,6 +10,7 @@
     <DockPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="36" Margin="12">
             <Button Content="Predict" FontSize="20" Command="{Binding TestObserverCommand}" Margin="0,0,4,0" Width="120" />
+            <Button Content="Create Locations" FontSize="20" Command="{Binding LocationsCommand}" Margin="0,0,4,0" Width="120" />
             <Button Content="Exit"  FontSize="20" Click="ButtonExit_Click" Margin="0,0,4,0" Width="120"/>
         </StackPanel>
 
@@ -20,6 +21,33 @@
         <TabControl Margin="12">
             <TabItem Header="Test 1" >
                 <DataGrid Margin="12" ItemsSource="{Binding People}" />
+            </TabItem>
+            <TabItem Header="Test Rectangles">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="24"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Button Content="Run" Grid.Row="0" Command="{Binding RunCommand}" />
+                    <ItemsControl ItemsSource="{Binding Rectangles, Mode=TwoWay}" Grid.Row="1">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Canvas x:Name="testCanvas" Margin="12"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemContainerStyle>
+                            <Style TargetType="ContentPresenter">
+                                <Setter Property="Canvas.Left" Value="{Binding X, Mode=TwoWay}"/>
+                                <Setter Property="Canvas.Top" Value="{Binding Y, Mode=TwoWay}"/>
+                            </Style>
+                        </ItemsControl.ItemContainerStyle>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Ellipse Width="{Binding Width}" Height="{Binding Height}" Fill="{Binding Color}"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
             </TabItem>
         </TabControl>
 
