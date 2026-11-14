@@ -89,25 +89,25 @@ namespace WpfCoreTestApp
 
             LocationsCommand = new RelayCommand(new Action<object>((o)=> 
             {
-                List<LocationModel> locations = new List<LocationModel>();
-                string[] lines = System.IO.File.ReadAllLines(@"C:\Users\tdw12\Desktop\Towns.csv");
+                //List<LocationModel> locations = new List<LocationModel>();
+                //string[] lines = System.IO.File.ReadAllLines(@"C:\Users\tdw12\Desktop\Towns.csv");
 
-                foreach( var l in lines.Skip(1))
-                {
-                    var loc = l.Split(",".ToCharArray());
-                    locations.Add(new LocationModel()
-                    {
-                        City = loc[0].Trim(),
-                        State = loc[1].Trim(),
-                        Country = loc[2].Trim(),
-                        Lat = Convert.ToDouble( loc[3].Trim()),
-                        Lon = Convert.ToDouble(loc[4].Trim()),
-                        Region = ""
-                    }) ;
-                }
+                //foreach( var l in lines.Skip(1))
+                //{
+                //    var loc = l.Split(",".ToCharArray());
+                //    locations.Add(new LocationModel()
+                //    {
+                //        City = loc[0].Trim(),
+                //        State = loc[1].Trim(),
+                //        Country = loc[2].Trim(),
+                //        Lat = Convert.ToDouble( loc[3].Trim()),
+                //        Lon = Convert.ToDouble(loc[4].Trim()),
+                //        Region = ""
+                //    }) ;
+                //}
 
-                var jsonString = JsonSerializer.Serialize(locations);
-                File.WriteAllText(@"C:\Users\tdw12\Desktop\Towns.json", jsonString);
+                //var jsonString = JsonSerializer.Serialize(locations);
+                //File.WriteAllText(@"C:\Users\tdw12\Desktop\Towns.json", jsonString);
 
             }));
 

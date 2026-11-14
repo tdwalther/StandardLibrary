@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 
@@ -6,6 +7,8 @@ namespace LocationStandard
 {
     public class LocationModel
     {
+        [Key]
+        public int Id { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public string Country { get; set; }
@@ -57,5 +60,5 @@ namespace LocationStandard
         {
             return (Math.Sqrt(Math.Pow((Lat - loc.Lat), 2) + Math.Pow((Lon - loc.Lon), 2)) / 1.41);
         }
-    }
+   }
 }

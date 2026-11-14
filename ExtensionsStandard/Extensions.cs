@@ -22,5 +22,18 @@ namespace ExtensionsStandard
                 action(item);
             }
         }
+
+        public static double StayBetween(this double d, double min, double max)
+        {
+            if (d < min)
+            {
+                return min;
+            }
+            if (d > max)
+            {
+                return max;
+            }
+            return d;
+        }
     }
 }

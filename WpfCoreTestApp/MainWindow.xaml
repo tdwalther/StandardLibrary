@@ -9,9 +9,9 @@
 
     <DockPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Height="36" Margin="12">
-            <Button Content="Predict" FontSize="20" Command="{Binding TestObserverCommand}" Margin="0,0,4,0" Width="120" />
-            <Button Content="Create Locations" FontSize="20" Command="{Binding LocationsCommand}" Margin="0,0,4,0" Width="120" />
-            <Button Content="Exit"  FontSize="20" Click="ButtonExit_Click" Margin="0,0,4,0" Width="120"/>
+            <Button Content="Predict" FontSize="14" Command="{Binding TestObserverCommand}" Margin="0,0,4,0" Width="120" />
+            <Button Content="Create Locations" FontSize="14" Command="{Binding LocationsCommand}" Margin="0,0,4,0" Width="120" />
+            <Button Content="Exit"  FontSize="14" Click="ButtonExit_Click" Margin="0,0,4,0" Width="120"/>
         </StackPanel>
 
         <StatusBar DockPanel.Dock="Bottom">

@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+    <Title>RDW Random Standard</Title>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,9 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="ExtensionsStandard">
-      <HintPath>..\ExtensionsStandard\bin\Release\netstandard2.0\ExtensionsStandard.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\ExtensionsStandard\ExtensionsStandard.csproj" />
   </ItemGroup>
 
 </Project>
