@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Title>TDW Location Standard</Title>
-	  <Version>1.1.0</Version>
+	  <Version>1.2.0</Version>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
